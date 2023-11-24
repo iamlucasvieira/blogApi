@@ -1,25 +1,29 @@
 # Blog Platform Backend
 
-This project is the backend implementation of a blogging platform using FastAPI. It allows users to create, edit, browse, and delete blog posts.
+This project is the backend implementation of a blogging platform using FastAPI. It allows users to create, edit,
+browse, and delete blog posts.
 
 ## Features
 
 - Create blog posts
 - Edit existing posts
-- Browse user posts
 - Delete posts
 - View posts from other users
+- View own posts
 
 ## Technologies
+
 - FastAPI
-- SQLAlchemy 
-- Pydantic 
-- Uvicorn 
+- SQLAlchemy
+- Sqlite
+- Pydantic
+- Uvicorn
 
 ## Design Choices
+
 - FastAPI: Modern, fast, and easy to use framework for building APIs
 - Pydantic: Data validation and settings management using Python type annotations
-- SQLite: Lightweight database for development
+- Sqlite: Lightweight database for development
 
 ## Getting Started
 
@@ -33,7 +37,7 @@ This project is the backend implementation of a blogging platform using FastAPI.
 Clone the repository:
 
 ```bash
-git clone
+git clone https://github.com/iamlucasvieira/blogApi.git
  ```
 
 Install dependencies:
@@ -42,8 +46,20 @@ Install dependencies:
 poetry install
 ```
 
-Run the server:
+## Usage
+
+### Run the server
 
 ```bash
 poetry run uvicorn app.main:app --reload
+```
+
+### Test the API
+
+Go to [localhost:8000/docs](localhost:8000/docs) to view the FastApi docs and test the API
+
+### Run tests, linters, and formatters
+
+```bash
+poetry run nox 
 ```
