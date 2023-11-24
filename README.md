@@ -1,4 +1,5 @@
 # Blog Platform Backend
+![example workflow](https://github.com/iamlucasvieira/blogApi/actions/workflows/ci.yml/badge.svg)
 
 This project is the backend implementation of a blogging platform using FastAPI. It allows users to create, edit,
 browse, and delete blog posts.

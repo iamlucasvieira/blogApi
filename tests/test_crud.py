@@ -4,7 +4,7 @@ import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.database import Base
-from app import crud, models, schemas
+from app import crud, schemas
 
 # Create a SQLAlchemy engine for testing.
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
