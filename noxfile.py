@@ -17,5 +17,5 @@ def lint(session):
 
 @session(python=["3.10"])
 def mypy(session):
-    session.install('mypy', "sqlalchemy-stubs")
+    session.install('mypy', "sqlalchemy-stubs", "pydantic")
     session.run('mypy', "app")
