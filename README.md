@@ -58,7 +58,13 @@ poetry run uvicorn app.main:app --reload
 
 Go to [localhost:8000/docs](localhost:8000/docs) to view the FastApi docs and test the API
 
-### Run tests, linters, and formatters
+### Run tests
+
+```bash
+poetry run pytest
+```
+
+### Run linters, and formatters
 
 ```bash
 poetry run nox 
