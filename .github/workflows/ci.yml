@@ -25,4 +25,4 @@ jobs:
       - name: Run the automated tests 
         run: poetry run pytest -v
       - name: Run linting
-        run: portry run nox
+        run: poetry run nox
