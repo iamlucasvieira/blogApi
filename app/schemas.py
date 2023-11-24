@@ -21,7 +21,7 @@ class Post(PostBase):
 
     class Config:
         """Pydantic model configuration."""
-        orm_mode = True
+        from_attributes = True
 
 
 class UserBase(BaseModel):
@@ -42,4 +42,4 @@ class User(UserBase):
 
     class Config:
         """Pydantic model configuration."""
-        orm_mode = True
+        from_attributes = True
