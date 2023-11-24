@@ -1,16 +1,23 @@
 """Module with Pydantic schemas for the API."""
 
 from pydantic import BaseModel
+from typing import Optional
 
 
 class PostBase(BaseModel):
     """Pydantic model for a post."""
-    title: str
-    content: str
+    title: Optional[str] = None
+    content: Optional[str] = None
 
 
 class PostCreate(PostBase):
     """Pydantic model for a post create."""
+    title: str
+    content: str
+
+
+class PostUpdate(PostBase):
+    """Pydantic model for a post update."""
     pass
 
 
